@@ -143,6 +143,11 @@
     .press .src { font-size: 14px; color: var(--accent-text); font-weight: 700; }
     .press .head { display: block; color: var(--navy); font-weight: 600; margin-top: 2px; }
 
+    /* Video */
+    .video-frame { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #000; }
+    .video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    .video-cap { margin-top: 12px; color: var(--muted); font-size: 15px; }
+
     /* Links */
     .links { display: flex; flex-wrap: wrap; gap: 12px; }
     .links a {
@@ -185,6 +190,14 @@
       <p>Launched in 2014, the concept grew to more than 70 franchises in under two years and led to a French championship. After building and then selling the brand, Samuel Houles now pursues new entrepreneurial ventures from Dubai.</p>
     </section>
 
+    <section id="video">
+      <h2>Video</h2>
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/BlaJAw2zEzw" title="Bubble Bump presentation video, bubble football" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <p class="video-cap">The Bubble Bump concept in action: bubble football.</p>
+    </section>
+
     <section id="career">
       <h2>Career</h2>
       <div class="item">
@@ -203,6 +216,10 @@
 
     <section id="press" class="press">
       <h2>In the press</h2>
+      <a href="https://www.bubblebump.fr/photos-et-videos-bubble-bump-en-images.php#presse" target="_blank" rel="noopener noreferrer">
+        <span class="src">Bubble Bump</span>
+        <span class="head">Press coverage: TF1, L'Équipe, Le Figaro, Eurosport, Gulli (in French)</span>
+      </a>
       <a href="https://www.lejournaldici.com/actualite/a-la-une/l%E2%80%99incroyable-succ%C3%A8s-de-samuel-houl%C3%A8s" target="_blank" rel="noopener noreferrer">
         <span class="src">Le Journal d'Ici</span>
         <span class="head">"L'incroyable succès de Samuel Houlès" (in French)</span>
@@ -214,10 +231,6 @@
       <a href="https://officieldelafranchise.fr/bump-etend-sa-licence-de-marque-autour-du-foot-en-bulle-et-du-tir-a-larc/" target="_blank" rel="noopener noreferrer">
         <span class="src">L'Officiel de la Franchise</span>
         <span class="head">"Bump expands its brand licence around bubble football and archery" (in French)</span>
-      </a>
-      <a href="https://www.bubblebump.fr/photos-et-videos-bubble-bump-en-images.php#presse" target="_blank" rel="noopener noreferrer">
-        <span class="src">Bubble Bump</span>
-        <span class="head">Press coverage: TF1, L'Équipe, Le Figaro, Eurosport, Gulli (in French)</span>
       </a>
     </section>
 
